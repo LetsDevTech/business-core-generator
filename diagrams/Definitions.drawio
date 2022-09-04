@@ -1,0 +1,161 @@
+<mxfile host="65bd71144e">
+    <diagram id="_mAPz9cZ7q-zwGa7ZSjJ" name="Page-1">
+        <mxGraphModel dx="1447" dy="1835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="70" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="1040" y="-1150" width="739" height="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="Example FLOW" style="rounded=1;whiteSpace=wrap;html=1;fontSize=30;verticalAlign=top;" vertex="1" parent="70">
+                    <mxGeometry width="739" height="690" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Statefull Entity A" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+                    <mxGeometry x="439" y="170" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="70" source="29" target="28">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="CREATES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="30">
+                    <mxGeometry x="-0.302" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="FLOW calls factory method and" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="70">
+                    <mxGeometry x="229" y="110" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="Statefull Entity A - State Changed to {newState}" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+                    <mxGeometry x="549" y="320" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="70" source="28" target="32">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="AFTER ADDING SOME DATA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="33">
+                    <mxGeometry x="0.2997" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Statefull Entity A - State Changed to {newState2}" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="70">
+                    <mxGeometry x="299" y="570" width="400" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="70" source="32" target="35">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="AFTER ADDING SOME MORE DATA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="36">
+                    <mxGeometry x="-0.3466" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="Statefull Entity A - State Changed to {finalState}. And the FLOW is done for this instance" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="70">
+                    <mxGeometry x="49" y="450" width="190" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" style="edgeStyle=none;html=1;entryX=0;entryY=0;entryDx=70;entryDy=80;entryPerimeter=0;" edge="1" parent="70" source="35" target="40">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1280" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="SETTING SOME PROPERTY FLAG" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="38">
+                    <mxGeometry x="0.1635" relative="1" as="geometry">
+                        <mxPoint x="42" y="15" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="snapshot database" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="70">
+                    <mxGeometry x="139" y="240" width="60" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" style="edgeStyle=none;html=1;entryX=1;entryY=0;entryDx=0;entryDy=15;entryPerimeter=0;" edge="1" parent="70" source="28" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Snapshot sent to database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="49">
+                    <mxGeometry x="0.22" relative="1" as="geometry">
+                        <mxPoint x="-20" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" style="edgeStyle=none;html=1;entryX=1;entryY=0;entryDx=0;entryDy=27.5;entryPerimeter=0;" edge="1" parent="70" source="32" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Snapshot sent to database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="51">
+                    <mxGeometry x="-0.3239" relative="1" as="geometry">
+                        <mxPoint x="-31" y="-24" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;entryX=1;entryY=1;entryDx=0;entryDy=-15;entryPerimeter=0;" edge="1" parent="70" source="35" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Snapshot sent to database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53">
+                    <mxGeometry x="0.2559" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="70" source="40" target="48">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Snapshot sent to database" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="55">
+                    <mxGeometry x="-0.185" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="10" y="-1160" width="990" height="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="68" value="CORE CONCEPTS" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=30;" vertex="1" parent="71">
+                    <mxGeometry width="990" height="920" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;Property&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Entity/Object related attribute&lt;/li&gt;&lt;li&gt;MAY have other properties&lt;/li&gt;&lt;li&gt;Has it's value stored in primitive types OR an Entity&lt;/li&gt;&lt;li&gt;MAY have validation rules to accept new values&lt;/li&gt;&lt;li&gt;MAY have validation rules when readed by the FLOW&lt;/li&gt;&lt;li&gt;It can be &quot;read-only&quot; from the FLOW's perspective&lt;/li&gt;&lt;li&gt;It can be &quot;read-once&quot; from the FLOW's perspective&lt;/li&gt;&lt;li&gt;May trigger a state change in the related entity/object&lt;/li&gt;&lt;li&gt;May trigger a custom action after a change&lt;/li&gt;&lt;li&gt;Access Control can be validated in the validation rules&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="71" vertex="1">
+                    <mxGeometry x="550" y="120" width="350" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="71" source="24" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="EXTENDS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="58">
+                    <mxGeometry x="-0.3348" y="-4" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;State&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;A special type of Property&lt;/li&gt;&lt;li&gt;&quot;read-only&quot; from the FLOW's perspective&lt;/li&gt;&lt;li&gt;Changes in the State are caused by changes in other Properties, therefore it won't trigger another state change directly(but it may trigger a state change through a custom change in another Property)&lt;/li&gt;&lt;li&gt;This Property must be accesible to the FLOW by some method(eg.: getCurrentState()) by returning a read-only copy of the&amp;nbsp;object&lt;/li&gt;&lt;li&gt;The State represent how the Object &quot;should&quot; behave to the FLOW, which kind of actions should be allowed or not, and how the object must be represented when presented to the end user&lt;/li&gt;&lt;li&gt;As with other Properties, State changes can trigger custom actions and create/use Properties not used in previous States.&lt;/li&gt;&lt;li&gt;Before successfully changing the value of the state, a snapshot of the instance MAY saved to address reporting needs other than the current state.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" parent="71" vertex="1">
+                    <mxGeometry x="30" y="140" width="370" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;Statefull Entity&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;An Entity with behaviours and Properties based on it's current State&lt;/li&gt;&lt;li&gt;The FLOW orchestrate the entities. It access the allowed Entity's Properties and manipulate the required data based on the Business Model.&lt;/li&gt;&lt;li&gt;The FLOW can be described as the Application Layer in a DDD design. So it's correct to say that, in this Statefull Entity modeling, the domain rules are encapsulated in the Statefull Entity, and enforced by it's properties and related state changes.&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="71">
+                    <mxGeometry x="30" y="620" width="400" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="71" source="26" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" value="HAS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="66">
+                    <mxGeometry x="0.236" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;Stateless Entity&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;An Entity that it's representations/behaviours doesn't depend on a State&amp;nbsp;&lt;/li&gt;&lt;li&gt;&lt;span&gt;It's the same as an &quot;Statefull Entity&quot; but it doesn't &quot;mutate&quot;.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="71">
+                    <mxGeometry x="525" y="700" width="400" height="125" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="71" source="43" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="61" value="HAS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="60">
+                    <mxGeometry x="-0.2857" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span&gt;Entity&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;Entities represents &quot;kinds of things&quot; we need to manage. An instance of an Entity, is the thing itself.&lt;/li&gt;&lt;li&gt;&lt;span&gt;It has Properties and behavious that describe what is it about&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;It MAY be created by the FLOW OR though some state changes triggered by the FLOW&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;align=left;" vertex="1" parent="71">
+                    <mxGeometry x="510" y="460" width="430" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" style="edgeStyle=none;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="71" source="26" target="43">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="EXTENDS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="64">
+                    <mxGeometry x="0.3424" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="62" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="71" source="27" target="43">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="EXTENDS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="62">
+                    <mxGeometry x="0.3495" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
